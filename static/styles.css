@@ -1,0 +1,319 @@
+@import url(https://fonts.googleapis.com/css?family=Assistant:400,700,800);
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background: #444;
+  color: #fff;
+  font-family: 'Assistant', Arial, sans-serif;
+}
+#app {
+  height: 100%;
+}
+
+h1 {
+  margin: 0.5em 0em;
+}
+
+h2 {
+  margin: 0.5em 0em;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #c94e50;
+}
+main {
+  height: 100%;
+  padding: 0em;
+  text-align: center;
+  overflow: auto;
+}
+.description {
+  margin: 0em auto 1em;
+  line-height: 1.3em;
+  font-weight: 400;
+  color: #aaa;
+  padding: 1em 6em 1em 6em;
+  font-size: small;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+
+}
+.right .bm-burger-button {
+  left: initial;
+  right: 36px;
+}
+.bm-burger-bars {
+  background: #3564ff;
+}
+
+.bm-morph-shape {
+  fill: #3f3f3f;
+}
+.bm-menu {
+  background: #3f3f3f;
+}
+.bm-menu a {
+  color: #eee;
+}
+.bm-menu a:hover,
+.bm-menu a:focus {
+  color: #3564ff;
+}
+.bm-item-list a, .bm-item-list>div {
+  padding: 0.8em;
+}
+.bm-item-list a span {
+  font-weight: 700;
+  font-size: medium;
+}
+a.bm-item:hover {
+  background-color: #333;
+}
+.menu-1 .bm-cross {
+  background: #bdc3c7;
+}
+.menu-1 .bm-menu {
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+.menu-2 .bm-cross {
+  background: #999;
+}
+.menu-2 .bm-menu {
+  padding: 3.4em 1em 0;
+}
+.menu-2 a {
+  padding: 1em;
+}
+.menu-2 i {
+  font-size: 1.7em;
+  vertical-align: middle;
+  color: #282a35;
+}
+.menu-3 .bm-cross {
+  background: #888;
+}
+.menu-3 .bm-menu {
+  padding: 2em 1em;
+  font-size: 1.15em;
+}
+.menu-3 i {
+  opacity: 0.5;
+}
+.menu-3 span {
+  letter-spacing: 1px;
+  font-size: 0.75em;
+}
+.menu-4 .bm-cross {
+  background: #888;
+}
+.menu-4 h2 {
+  margin: 0 auto;
+  padding: 2em 1em;
+  color: rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+.menu-4 h2 i {
+  margin-left: 0.2em;
+}
+.menu-4 h2 span {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+.menu-4 a {
+  padding: 1em;
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+.menu-4 a span {
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.menu-4 a:hover,
+.menu-4 a:focus {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0);
+  color: #ffffff;
+}
+#slide .bm-cross {
+  background: #bdc3c7;
+}
+#slide .bm-menu {
+  padding: .5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-cross-button {
+  right: 24px !important;
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+  height: 8px;
+  background-color:#333;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+#outer-container {
+  height: auto;
+}
+
+.menu-selected {
+  background-color: #3564ff !important;
+  color: #fff !important;
+}
+
+.mini-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #3564ff;
+}
+
+.input-text {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  padding: 0.6em;
+  font-size: small;
+  font-weight: bold;
+}
+
+.input-text:focus {
+  background-color: #373737;
+  outline: none;
+}
+
+button {
+  background-color: #3564ff;
+  border: none;
+  color: #fff;
+  height: 32px;
+  font-size: small;
+  margin: 0px 4px 0px 4px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #5a80ff;
+}
+
+button:focus, button:active {
+  outline: none;
+}
+
+/* Slightly modded custom checkbox from W3C site */
+
+.checkboxContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: medium;
+}
+
+.checkboxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #333;
+}
+
+.checkboxContainer:hover input ~ .checkmark {
+  background-color: #373737;
+}
+
+.checkboxContainer input:checked ~ .checkmark {
+  background-color: #3564ff;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkboxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkboxContainer .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 8px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.loading-api-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2em;
+}
+
+.tooltip-theme {
+  color: #fff !important;
+  background-color: #222 !important;
+  border-radius: 0px !important;
+  text-align: left;
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.1);
+}
+
+.tooltip-theme.place-top::after {
+  border-top-color: #222 !important;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #aaa;
+  text-align: center;
+  line-height: .5em;
+}
