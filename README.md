@@ -1,6 +1,6 @@
 #  Worldwide Cryptocurrency Mining Profitability
 This is a small experiment to show how profitable it is to mine cryptocurrencies with different equipment based on cryptocurrency prices and prices of electricity worldwide.
-It is build using Next.js / React.
+It is built using Next.js / React.
 
 This was made over the period of a couple of days, so the code is not exemplary, but it does the job to showcase the data.
 
